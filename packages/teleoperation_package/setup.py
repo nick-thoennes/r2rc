@@ -1,6 +1,6 @@
 from setuptools import setup
 
-package_name = 'drive_with_DS4'
+package_name = 'teleoperation_package'
 
 setup(
     name=package_name,
@@ -14,13 +14,13 @@ setup(
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='ndt',
-    maintainer_email='thoennesn@gmail.com',
+    maintainer_email='nick.d.thoennes@gmail.com',
     description='Intermediary between the VESC and the servo controller, and the DS4 controller.',
-    license='a license to kill >:D',
+    license='Apache License 2.0',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'driver = drive_with_DS4.driver:main'
+            'teleoperation_node = teleoperation_package.teleoperation_node:main'
         ],
     },
 )

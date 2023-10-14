@@ -13,9 +13,9 @@ import numpy as np
 #collect x and z data from /cmd_vel topic
 #x is the left stick, used for forward and backward linear velocity, -2000 to 2000
 #z is the right stick, used for right and left steering angle, -90 to 90
-class DS4_Subscriber(Node):
+class Teleoperation_Node(Node):
     def __init__(self):
-        super().__init__('DS4_Subscriber_Node')
+        super().__init__('Teleoperation_Node')
         self.subscriber = self.create_subscription(
                                 Twist, 
                                 'cmd_vel', 
@@ -41,10 +41,10 @@ class DS4_Subscriber(Node):
 
 
 def main(args=None):
-    print('Hi from drive_with_DS4.')
+    print('Hi from teleoperation_node.')
     rclpy.init(args=args)
-    DS4_Subscriber_ = DS4_Subscriber()
-    rclpy.spin(DS4_Subscriber_)
+    teleoperation_node_ = Teleoperation_Node()
+    rclpy.spin(teleoperation_node_)
 
 
 if __name__ == '__main__':

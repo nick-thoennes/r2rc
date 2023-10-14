@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>drive_with_DS4</name>
+  <name>teleoperation_package</name>
   <version>0.0.1</version>
-  <description>TODO: Package description</description>
-  <maintainer email="thoennesn@gmail.com">ndt</maintainer>
-  <license>a license to kill</license>
+  <description>Intermediary between the VESC and the servo controller, and the DS4 controller.</description>
+  <maintainer email="nick.d.thoennes@gmail.com">ndt</maintainer>
+  <license>Apache License 2.0</license>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
