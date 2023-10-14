@@ -1,0 +1,30 @@
+Telemetry web application to show the following information:
+- pose of robot
+- instantaneous current draw
+- instantaneous voltate
+- battery charge remaining
+- camera POV
+- temperature
+- instantaneous speed
+- instaneous acceleration
+- resources usage
+- LiDAR scans
+
+buttons/actions for the following
+- start autonomous driving
+- stop autonomous driving
+- restart system
+- manual driving
+- emergency stop
+
+build using following technologies:
+fron-end:
+    - HTML/CSS/JavaScript
+    - React
+    - D3.js
+back-end:
+    - Python
+    - MySQL
+    - RESTful APIs
+data processing:
+    - 
