@@ -51,4 +51,4 @@ def generate_launch_description():
         ),
     ]
 
-    return LaunchDescription(ds4_driver_nodes + steering_nodes + vesc_nodes + teleoperation_nodes)
+    return LaunchDescription(ds4_driver_nodes + steering_nodes + teleoperation_nodes)
